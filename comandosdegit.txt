@@ -1,0 +1,49 @@
+configurar credenciales
+
+git config --global user.name "un nombre"
+git config --global user.email "un email"
+
+git config --global -l                                                       --->ver las credenciales
+
+git init                                                                     ---> iniciar repositorios de git 
+
+git status                                                                   --->estado del repositorio
+    add .                                                                    ---> añadir
+    add nombrearchivo                                                        ---> si solo quiero añadir un archivo especifico
+    commit -m "un mensaje"                                                   ---> confirmar los archivos
+    commit --amend -m "unnuevomensaje"	                                     ---> corregir nombre del commit
+    diff                                                                     ---> ver lo ultimo que havia confirmado
+    checkout                                                                 ---> regresar al ultimo commit
+    log                                                                      ---> historial de cambios de commit repositorios
+    reset nombrearchivo                                                      --->elimininar archivos o directorios 
+    reset --soft iddelcommit                                                 ---> recuperar archivos borrados los dos
+    reset --hard iddelcommit  
+    reset --mixed iddelcommit                                                ---> elimina el commi pero conserva lo que tenia
+    config --global alias.elaliasquedeseas "nombreoriginalcomando"           --->crar alias para acortar comandos
+    mv nombreactualarchivo nuevonombrearchivo                                --->cambia el nombre de los archivos
+    rm nombrearchivo                                                         --->remover un archivo
+    reflog                                                                   --->historial de cambios 
+    
+FAST-FORWARD (la rama secundaria no debe intervenir con la rama primaria)
+    branch nombrerama	                                                     ---> para crar una rama
+    log --oneline --decorate --all --graph                                   ---> muestra en que rama estamos 
+    checkout nombrerama                                                      ---> cambiar de rama
+    merge nombreramaaunir                                                    ---> unir el master con la rama (debes estar en el master)
+    branch -d nombrerama                                                     ---> eliminar una rama      
+    checkout -b nombrerama                                                   ---> cambiar ala rama de inmediato
+================================================///=======================================================================
+TAG (etiquetas )
+    tag nombreetiqueta                                                       ---> crear etiqueta
+    tag                                                                      ---> ver la etiqueta
+    tag -d nombreetiqueta                                                    ---> eliminar
+    tag -a version -m "un nombre"                                            ---> dar mas detalles ala etiqueta
+    show                                                                     ---> ver todo los dtalles asta el ultimo commit
+    tag -a version indentificador -m "nombre"                                ---> crear en versiones pasadas
+     
+    
+gitignore:
+crar un archivo con ese mismo nombre y todo lo que se escriba dentro sera ingnorado
+
+     
+    
+    
